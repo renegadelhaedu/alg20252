@@ -49,7 +49,6 @@ while op != 0:
 
 
 
-
     #incremente uma opçao 4 em que o usuário busque um produto
     # e o programa informe se ele está ou nao na lista (use for para percorrer)
 
