@@ -1,5 +1,7 @@
 import exemplo_minhasfuncoes as mf
 import usarwebcam as minhawebcam
+from validacoes import validar_login as vl
+
 
 #falta muita coisa a ser implementada. isso é só p dar exemplo
 
@@ -27,12 +29,13 @@ while opcao != "0":
         login = input("Login: ")
         senha = input("Senha: ")
 
+        #vl.validar_cpf(login) mostrando exemplo de importar funcao de dentro de um pacote
 
         # a funcao verificar_login retorna true se achar o adm, entao usamos o not
         if not mf.verificar_login(usuarios, login, senha, 'adm'):
             print("Acesso negado! Somente administradores.")
         else:
-            minhawebcam.tirar_foto('ultimoacesso')
+            minhawebcam.tirar_foto('imagens//ultimoacesso')
             #tirar uma foto para gravar o acesso do admin
             op_adm = 'inicial'
             while op_adm != '0':
