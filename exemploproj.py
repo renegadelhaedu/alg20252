@@ -10,7 +10,7 @@ produtos_servicos = []  # [id, nome, tipo, horario, valor]
 compras = []  # [login_cliente, produto]
 agendamentos = []  # [login_cliente, servico, horario_escolhido]
 
-usuarios.append(["admin", "123", "adm"])
+usuarios.append(["admin", "123", "adm",'20:31-17/11/2025'])
 
 
 id_produto = 1
@@ -64,3 +64,8 @@ while opcao != "0":
                     for p in produtos_servicos:
                         print(p)
 
+
+    elif opcao == "3":
+        mf.cadastrar_usuario(usuarios)
+        print('usuário cadastrado com sucesso')
+        print(usuarios)
