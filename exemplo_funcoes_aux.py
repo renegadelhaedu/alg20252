@@ -1,6 +1,7 @@
 import random
 
 def verifica_login_existente(usuarios, login):
+    usuarios.clear()
     for u in usuarios:
         if u[0] == login:
             return True

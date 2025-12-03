@@ -6,9 +6,11 @@
 #leitura = 'r'
 arquivo = open('professores.txt' , 'r')
 
+#pega o arquivo aberto e lê todas as linhas, transformando em uma lista de linhas
 linhas = arquivo.readlines()
-arquivo.close()
+arquivo.close() #fecha o arquivo
 professores = []
+#percorrer a lista de linhas e pegar os valores úteis
 for linha in linhas:
     texto = linha.replace('\n','')
     if len(texto) > 0:
